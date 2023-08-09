@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84A297962A836247001DEBCD /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A297952A836247001DEBCD /* OnboardingContainerViewController.swift */; };
+		84A297982A83AB2F001DEBCD /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A297972A83AB2F001DEBCD /* OnboardingViewController.swift */; };
+		84A2979A2A83AECD001DEBCD /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A297992A83AECD001DEBCD /* OnboardingContainerViewController.swift */; };
 		84A4B45C2A829F1200C291C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4B45B2A829F1200C291C9 /* AppDelegate.swift */; };
 		84A4B4602A829F1200C291C9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4B45F2A829F1200C291C9 /* LoginViewController.swift */; };
 		84A4B4652A829F1400C291C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A4B4642A829F1400C291C9 /* Assets.xcassets */; };
@@ -16,7 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		84A297952A836247001DEBCD /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingContainerViewController.swift; path = ../../../../../.Trash/Ios/Bankey/OnboardingContainerViewController.swift; sourceTree = "<group>"; };
+		84A297972A83AB2F001DEBCD /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		84A297992A83AECD001DEBCD /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		84A4B4582A829F1200C291C9 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A4B45B2A829F1200C291C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84A4B45F2A829F1200C291C9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +42,8 @@
 		84A297942A8361AC001DEBCD /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				84A297952A836247001DEBCD /* OnboardingContainerViewController.swift */,
+				84A297972A83AB2F001DEBCD /* OnboardingViewController.swift */,
+				84A297992A83AECD001DEBCD /* OnboardingContainerViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -163,8 +166,9 @@
 			files = (
 				84A4B4732A82A27D00C291C9 /* LoginView.swift in Sources */,
 				84A4B4602A829F1200C291C9 /* LoginViewController.swift in Sources */,
+				84A297982A83AB2F001DEBCD /* OnboardingViewController.swift in Sources */,
+				84A2979A2A83AECD001DEBCD /* OnboardingContainerViewController.swift in Sources */,
 				84A4B45C2A829F1200C291C9 /* AppDelegate.swift in Sources */,
-				84A297962A836247001DEBCD /* OnboardingContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
