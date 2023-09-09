@@ -10,16 +10,15 @@ import Foundation
 class LocalState {
     
     private enum Keys: String {
-        case hasOnboardd
+        case hasOnboarded
     }
     
     public static var hasOnboarded: Bool {
         get {
-            return UserDefaults.standard.bool(forKey: Keys.hasOnboardd.rawValue)
+            return UserDefaults.standard.bool(forKey: Keys.hasOnboarded.rawValue)
         }
         set {
-            UserDefaults.standard.set(newValue, forKey: Keys.hasOnboardd.rawValue)
-            UserDefaults.standard.synchronize()
+            UserDefaults.standard.set(newValue, forKey: Keys.hasOnboarded.rawValue)
         }
     }
     

@@ -7,6 +7,8 @@
 
 import UIKit
 
+let appColor: UIColor = .systemTeal
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -14,19 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let loginViewColntroller = LoginViewController()
     let onboardingContainerViewController = OnboardingContainerViewController()
     let dummyViewController = DummyViewController()
+    let mainviewController = MainviewController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
         
         loginViewColntroller.delegate = self
         onboardingContainerViewController.delegate = self
         dummyViewController.logoutDelagate = self
         
-        window?.rootViewController = loginViewColntroller
-//        window?.rootViewController = onboardingContainerViewController
+        setRootViewController(mainviewController)
+//        setRootViewController(loginViewColntroller)
+        mainviewController.selectedIndex = 1
         return true
     }
 
@@ -35,20 +38,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate {
     
     func setRootViewController(_ vc: UIViewController, animated: Bool = true) {
-        func setVc() {
-            self.window?.rootViewController = vc
-            self.window?.makeKeyAndVisible()
-        }
-        
         guard animated, let window = self.window else {
-            setVc()
+            setRootViewController(vc)
             return
         }
         
-        setVc()
+        setRootViewController(vc)
         UIView.transition(
             with: window, duration: 0.5, options: .transitionCrossDissolve, animations: nil, completion: nil
         )
+    }
+    
+    func setRootViewController(_ vc: UIViewController) {
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
     }
     
 }
