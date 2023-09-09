@@ -21,7 +21,7 @@ class MainviewController: UITabBarController {
             return UINavigationController(rootViewController: vc)
         }
         
-        let summaryVc = onVcSetup(AcctountSummaryViewController(), imgName: "list.dash.header.rectangle", title: "Summary")
+        let summaryVc = onVcSetup(AccountSummaryViewController(), imgName: "list.dash.header.rectangle", title: "Summary")
         summaryVc.navigationBar.tintColor = appColor
         hideNavigationBarLine(summaryVc.navigationBar)
         
@@ -43,13 +43,7 @@ class MainviewController: UITabBarController {
         tabBar.tintColor = appColor
         tabBar.isTranslucent = false
     }
-}
-
-class AcctountSummaryViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .green
-    }
+    
 }
 
 class MoveMoneySummaryViewController: UIViewController {
