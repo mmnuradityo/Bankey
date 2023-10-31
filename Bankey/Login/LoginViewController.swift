@@ -70,7 +70,7 @@ extension LoginViewController {
         titleLabel.textAlignment = .center
         titleLabel.font = UIFont.preferredFont(forTextStyle: .largeTitle)
         titleLabel.adjustsFontForContentSizeCategory = true
-        titleLabel.text = "Banky"
+        titleLabel.text = "Bankey"
         titleLabel.alpha = 0
         
         subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -168,6 +168,18 @@ extension LoginViewController {
     private func configurationView(withMessage message: String) {
         errorMessageLable.isHidden = false
         errorMessageLable.text = message
+        shakeButton()
+    }
+    
+    private func shakeButton() {
+        let animation = CAKeyframeAnimation()
+        animation.keyPath = "position.x"
+        animation.values = [0, 10, -10, 10, 0]
+        animation.keyTimes = [0, 0.16, 0.5, 0.83, 1]
+        animation.duration = 0.4
+        
+        animation.isAdditive = true
+        signInButton.layer.add(animation, forKey: "shake")
     }
 }
 
