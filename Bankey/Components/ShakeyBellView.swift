@@ -11,6 +11,9 @@ import UIKit
 class ShakeyBellView: UIView {
     
     let imageView = UIImageView()
+    let buttonView = UIButton()
+    
+    let buttonSize: CGFloat = 16
     let frameSize: CGFloat = 48
     let contentSize: CGFloat = 24
     
@@ -42,21 +45,38 @@ extension ShakeyBellView {
     
     func style() {
         translatesAutoresizingMaskIntoConstraints = false
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         let image = UIImage(systemName: "bell.fill")!
             .withTintColor(.white, renderingMode: .alwaysOriginal)
         imageView.image = image
+        
+        buttonView.translatesAutoresizingMaskIntoConstraints = false
+        buttonView.backgroundColor = .systemRed
+        buttonView.titleLabel?.font = UIFont.systemFont(ofSize: 13)
+        buttonView.layer.cornerRadius = buttonSize/2
+        buttonView.setTitle("9", for: .normal)
+        buttonView.setTitleColor(.white, for: .normal)
     }
     
     func layout() {
         addSubview(imageView)
+        addSubview(buttonView)
         
+        // ImageView
         NSLayoutConstraint.activate([
             imageView.centerXAnchor.constraint(equalTo: centerXAnchor),
             imageView.centerYAnchor.constraint(equalTo: centerYAnchor),
             imageView.heightAnchor.constraint(equalToConstant: contentSize),
             imageView.widthAnchor.constraint(equalToConstant: contentSize)
+        ])
+        
+        // ButtonView
+        NSLayoutConstraint.activate([
+            buttonView.topAnchor.constraint(equalTo: imageView.topAnchor),
+            buttonView.leadingAnchor.constraint(equalTo: imageView.trailingAnchor, constant: -9),
+            buttonView.widthAnchor.constraint(equalToConstant: buttonSize),
+            buttonView.heightAnchor.constraint(equalToConstant: buttonSize)
         ])
     }
 }
@@ -74,6 +94,39 @@ extension ShakeyBellView {
         let frameDuration = Double(1/numberOffFrame)
         
         imageView.setAnchorPoint(CGPoint(x: 0.5, y: yOffset))
+        
+        // sample verisons
+        /*
+        UIView.animateKeyframes(withDuration: duration, delay: 0, options: [],
+                 animations: {
+                   UIView.addKeyframe(withRelativeStartTime: 0.0,
+                                      relativeDuration: frameDuration) {
+                       self.imageView.transform = CGAffineTransform(rotationAngle: -angle)
+                   }
+                   UIView.addKeyframe(withRelativeStartTime: frameDuration,
+                                      relativeDuration: frameDuration) {
+                       self.imageView.transform = CGAffineTransform(rotationAngle: +angle)
+                   }
+                   UIView.addKeyframe(withRelativeStartTime: frameDuration*2,
+                                      relativeDuration: frameDuration) {
+                       self.imageView.transform = CGAffineTransform(rotationAngle: -angle)
+                   }
+                   UIView.addKeyframe(withRelativeStartTime: frameDuration*3,
+                                      relativeDuration: frameDuration) {
+                       self.imageView.transform = CGAffineTransform(rotationAngle: +angle)
+                   }
+                   UIView.addKeyframe(withRelativeStartTime: frameDuration*4,
+                                      relativeDuration: frameDuration) {
+                       self.imageView.transform = CGAffineTransform(rotationAngle: -angle)
+                   }
+                   UIView.addKeyframe(withRelativeStartTime: frameDuration*5,
+                                      relativeDuration: frameDuration) {
+                       self.imageView.transform = CGAffineTransform.identity
+                   }
+                 },
+                 completion: nil
+               )
+         */
         
         UIView.animateKeyframes(
             withDuration: duration, delay: 0, options: [],
