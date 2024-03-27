@@ -11,9 +11,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountSummaryheaderView" customModule="Bankey" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="bju-g3-Phe"/>
-                <outlet property="dateLable" destination="gHH-Bb-Vjx" id="9BO-fk-zUS"/>
-                <outlet property="nameLable" destination="gHH-Bb-Vjx" id="RQE-u4-ODn"/>
-                <outlet property="welcomeLable" destination="Rf4-rF-9za" id="z40-3g-Dbc"/>
+                <outlet property="dateLabel" destination="gHH-Bb-Vjx" id="IbW-Fx-bfm"/>
+                <outlet property="nameLabel" destination="nsl-hg-HZ0" id="ewq-n3-Eqp"/>
+                <outlet property="welcomeLabel" destination="Rf4-rF-9za" id="pwD-MV-Mgb"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -39,7 +39,7 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kevin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsl-hg-HZ0">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kevin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsl-hg-HZ0">
                                     <rect key="frame" x="0.0" y="65.333333333333329" width="267" height="20.333333333333329"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>

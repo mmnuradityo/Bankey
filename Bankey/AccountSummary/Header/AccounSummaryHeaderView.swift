@@ -11,10 +11,10 @@ import UIKit
 class AccountSummaryheaderView: UIView {
   
   @IBOutlet var contentView: UIView!
-  @IBOutlet weak var welcomeLable: UILabel!
-  @IBOutlet weak var nameLable: UILabel!
-  @IBOutlet weak var dateLable: UILabel!
+  @IBOutlet weak var welcomeLabel: UILabel!
+  @IBOutlet weak var nameLabel: UILabel!
   
+  @IBOutlet weak var dateLabel: UILabel!
   let shakeyBellView = ShakeyBellView()
   
   struct ViewModel {
@@ -68,8 +68,8 @@ class AccountSummaryheaderView: UIView {
   }
   
   func configure(viewModel: ViewModel) {
-    welcomeLable.text = viewModel.welcomeMessage
-    nameLable.text = viewModel.name
-    dateLable.text = viewModel.dateFormated
+    welcomeLabel.text = viewModel.welcomeMessage
+    nameLabel.text = viewModel.name
+    dateLabel.text = viewModel.dateFormated
   }
 }
