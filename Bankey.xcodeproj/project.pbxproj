@@ -29,6 +29,8 @@
 		84A68C6D2AAB37FC009BD467 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A68C6C2AAB37FC009BD467 /* DummyViewController.swift */; };
 		84BBE6AC2BB3B76B003ADCDA /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBE6AB2BB3B76B003ADCDA /* Date+Utils.swift */; };
 		84BBE6AE2BB3B96F003ADCDA /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBE6AD2BB3B96F003ADCDA /* AccountSummaryViewController+Networking.swift */; };
+		84BBE6B22BB3F720003ADCDA /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBE6B12BB3F720003ADCDA /* ProfileTests.swift */; };
+		84BBE6B42BB3F8DA003ADCDA /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBE6B32BB3F8DA003ADCDA /* AccountTests.swift */; };
 		84FECF342AADC64B00F94A54 /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECF332AADC64B00F94A54 /* AccountSummaryCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		84A68C6C2AAB37FC009BD467 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		84BBE6AB2BB3B76B003ADCDA /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
 		84BBE6AD2BB3B96F003ADCDA /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
+		84BBE6B12BB3F720003ADCDA /* ProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
+		84BBE6B32BB3F8DA003ADCDA /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
 		84FECF332AADC64B00F94A54 /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +115,8 @@
 		8434187B2AE9FBE000D8F071 /* BankeyUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				843418832AE9FD0800D8F071 /* CurrencyFormatterTests.swift */,
+				84BBE6B02BB3F6FF003ADCDA /* AccountSummary */,
+				84BBE6AF2BB3F6E6003ADCDA /* Utils */,
 			);
 			path = BankeyUnitTests;
 			sourceTree = "<group>";
@@ -190,6 +195,23 @@
 				84A68C6C2AAB37FC009BD467 /* DummyViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		84BBE6AF2BB3F6E6003ADCDA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				843418832AE9FD0800D8F071 /* CurrencyFormatterTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		84BBE6B02BB3F6FF003ADCDA /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				84BBE6B12BB3F720003ADCDA /* ProfileTests.swift */,
+				84BBE6B32BB3F8DA003ADCDA /* AccountTests.swift */,
+			);
+			path = AccountSummary;
 			sourceTree = "<group>";
 		};
 		84FECF312AADC60400F94A54 /* Header */ = {
@@ -312,6 +334,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				843418842AE9FD0800D8F071 /* CurrencyFormatterTests.swift in Sources */,
+				84BBE6B42BB3F8DA003ADCDA /* AccountTests.swift in Sources */,
+				84BBE6B22BB3F720003ADCDA /* ProfileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
