@@ -71,5 +71,3 @@ class AccountSummaryViewControllerTests: XCTestCase {
     XCTAssertEqual("Ensure you are connected to the internet. Please try again.", vc.errorAlert.message)
   }
 }
-
-// change 1
