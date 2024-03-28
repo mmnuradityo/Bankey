@@ -16,6 +16,8 @@
 		843418842AE9FD0800D8F071 /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843418832AE9FD0800D8F071 /* CurrencyFormatterTests.swift */; };
 		846351AB2AAED6B1004CD857 /* Decimal+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846351AA2AAED6B1004CD857 /* Decimal+Utils.swift */; };
 		846351AD2AAED74F004CD857 /* CurencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846351AC2AAED74F004CD857 /* CurencyFormatter.swift */; };
+		8472310B2BB5173400BAA137 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472310A2BB5173400BAA137 /* ProfileManager.swift */; };
+		8472310D2BB5197000BAA137 /* AccountSummaryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472310C2BB5197000BAA137 /* AccountSummaryViewControllerTests.swift */; };
 		847A67A42AAB52980061BC57 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A67A32AAB52980061BC57 /* LocalState.swift */; };
 		848DC55B2AECD7B3008D25D6 /* NSNotifictaionName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DC55A2AECD7B3008D25D6 /* NSNotifictaionName.swift */; };
 		848DC55D2AED01BF008D25D6 /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DC55C2AED01BF008D25D6 /* UITextField+SecureToggle.swift */; };
@@ -57,6 +59,8 @@
 		843418832AE9FD0800D8F071 /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
 		846351AA2AAED6B1004CD857 /* Decimal+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Utils.swift"; sourceTree = "<group>"; };
 		846351AC2AAED74F004CD857 /* CurencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurencyFormatter.swift; sourceTree = "<group>"; };
+		8472310A2BB5173400BAA137 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		8472310C2BB5197000BAA137 /* AccountSummaryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTests.swift; sourceTree = "<group>"; };
 		847A67A32AAB52980061BC57 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		848DC55A2AECD7B3008D25D6 /* NSNotifictaionName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotifictaionName.swift; sourceTree = "<group>"; };
 		848DC55C2AED01BF008D25D6 /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 				84BBE6AD2BB3B96F003ADCDA /* AccountSummaryViewController+Networking.swift */,
 				84FECF312AADC60400F94A54 /* Header */,
 				84FECF322AADC61600F94A54 /* Cells */,
+				847231092BB516E700BAA137 /* Networking */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -123,6 +128,14 @@
 				84BBE6AF2BB3F6E6003ADCDA /* Utils */,
 			);
 			path = BankeyUnitTests;
+			sourceTree = "<group>";
+		};
+		847231092BB516E700BAA137 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8472310A2BB5173400BAA137 /* ProfileManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		847A67A22AAB52800061BC57 /* Utils */ = {
@@ -214,6 +227,7 @@
 			children = (
 				84BBE6B12BB3F720003ADCDA /* ProfileTests.swift */,
 				84BBE6B32BB3F8DA003ADCDA /* AccountTests.swift */,
+				8472310C2BB5197000BAA137 /* AccountSummaryViewControllerTests.swift */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -342,6 +356,7 @@
 				843418842AE9FD0800D8F071 /* CurrencyFormatterTests.swift in Sources */,
 				84BBE6B42BB3F8DA003ADCDA /* AccountTests.swift in Sources */,
 				84BBE6B22BB3F720003ADCDA /* ProfileTests.swift in Sources */,
+				8472310D2BB5197000BAA137 /* AccountSummaryViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +367,7 @@
 				8413AB7C2AAC008F0053B71D /* UIViewController+Utils.swift in Sources */,
 				84BBE6AC2BB3B76B003ADCDA /* Date+Utils.swift in Sources */,
 				84A4B4732A82A27D00C291C9 /* LoginView.swift in Sources */,
+				8472310B2BB5173400BAA137 /* ProfileManager.swift in Sources */,
 				847A67A42AAB52980061BC57 /* LocalState.swift in Sources */,
 				84A68C6D2AAB37FC009BD467 /* DummyViewController.swift in Sources */,
 				848DC55D2AED01BF008D25D6 /* UITextField+SecureToggle.swift in Sources */,
